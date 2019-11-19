@@ -1,0 +1,21 @@
+#Demande du coefficient directeur et de l'ordonnée à l'origine de la fonction affine. Avec m et p 2 nombres réels.
+def fonction1():
+  print ('Quel est votre coefficient directeur de votre fonction affine?')
+  m=int (input())
+  print ('Quel est lordonnée à lorigine de votre fonction affine?')
+  p=int (input())
+  return m,p
+
+#Calcul. Pour ce calcul nous avons besoin de 2 nombres réels définis précédement
+def fonction2(m,p):
+  f=m*x+p
+  return f
+
+#Affichage du résultat de l'équation f=mx+p avec m et p 2 nombres réels définis dans fonction1
+def fonction3 (f):
+  print(f)
+
+m,p=fonction1()
+for x in range (0,10):
+  f=fonction2(m,p)
+  fonction3(f)
